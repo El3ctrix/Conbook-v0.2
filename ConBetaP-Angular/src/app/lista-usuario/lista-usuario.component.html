@@ -1,0 +1,27 @@
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h2>Lista de Usuarios</h2>
+  </div>
+  <div class="panel-body">
+    <table class="table table-striped">
+      <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Correo</th>
+        <th>Rol</th>
+        <th>Actions</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let usuario of usuarios | async">
+        <td>{{usuario.nombre}}</td>
+        <td>{{usuario.correo}}</td>
+        <td>{{usuario.rol}}</td>
+        <td><button (click)="deleteUsuario(usuario.idusuario)" class="btn btn-danger">Eliminar</button>
+          <button (click)="usuarioDetails(usuario.idusuario)" class="btn btn-info" style="margin-left: 10px">Detalles</button>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

@@ -1,0 +1,18 @@
+<h2>Detalles del Usuarios</h2>
+
+<hr/>
+<div *ngIf="usuario">
+  <div>
+    <label><b>Nombre: </b></label> {{usuario.nombre}}
+  </div>
+  <div>
+    <label><b>Correo: </b></label> {{usuario.correo}}
+  </div>
+  <div>
+    <label><b>Rol: </b></label> {{usuario.rol}}
+  </div>
+</div>
+
+<br>
+<br>
+<button (click)="list()" class="btn btn-primary">Regresar a Lista de Usuarios</button><br>
