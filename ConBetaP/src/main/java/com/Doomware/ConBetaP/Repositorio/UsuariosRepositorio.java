@@ -9,4 +9,5 @@ import java.util.List;
 public interface UsuariosRepositorio extends JpaRepository<Usuarios, Integer>{
     List<Usuarios> findAll();
     Usuarios findByIdusuario(int id);
+    Usuarios findByCorreo(String correo);
 }

@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="87e0eb46-d60b-4945-a4f9-3fb5297a9738" name="Default Changelist" comment="Creando Front-End" />
+    <list default="true" id="87e0eb46-d60b-4945-a4f9-3fb5297a9738" name="Default Changelist" comment="Creando Front-End">
+      <change afterPath="$PROJECT_DIR$/src/app/login/login.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/login/login.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/login/login.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/login/login.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Usuario.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Usuario.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/usuario.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/usuario.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConBetaP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ConBetaP/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConBetaP/src/main/java/com/Doomware/ConBetaP/Controlador/UsuariosControlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ConBetaP/src/main/java/com/Doomware/ConBetaP/Controlador/UsuariosControlador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConBetaP/src/main/java/com/Doomware/ConBetaP/Repositorio/UsuariosRepositorio.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ConBetaP/src/main/java/com/Doomware/ConBetaP/Repositorio/UsuariosRepositorio.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,6 +103,7 @@
       <workItem from="1571201044917" duration="39000" />
       <workItem from="1571201294434" duration="609000" />
       <workItem from="1571267438826" duration="1552000" />
+      <workItem from="1571287203798" duration="6927000" />
     </task>
     <servers />
   </component>

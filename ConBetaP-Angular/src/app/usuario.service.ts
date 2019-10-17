@@ -9,12 +9,16 @@ import {Usuario} from './Usuario';
 export class UsuarioService {
 
   private baseUrl = 'http://localhost:8080/api/v1/usuarios';
+  private mailUrl = 'http://localhost:8080/api/v1/login';
   constructor(private http: HttpClient) { }
 
   getUsuario(id: number) {
     return this.http.get<Usuario>(this.baseUrl + '/' + id);
   }
 
+  getByCorreo(correo: string) {
+    return this.http.get<Usuario>(this.mailUrl + '/' + correo);
+  }
   createUsuario(usuario: any): Observable<any> {
     return this.http.post(`${this.baseUrl}`, usuario);
   }

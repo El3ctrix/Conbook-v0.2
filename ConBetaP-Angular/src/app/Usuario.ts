@@ -2,6 +2,6 @@ export class Usuario{
   idusuario: number;
   nombre: string;
   correo: string;
-  contrasena: string;
+  contraseña: string;
   rol: number;
 }

@@ -6,9 +6,10 @@ import { AppComponent } from './app.component';
 import { CrearUsuarioComponent } from './crear-usuario/crear-usuario.component';
 import { DetallesUsuarioComponent } from './detalles-usuario/detalles-usuario.component';
 import { ListaUsuarioComponent } from './lista-usuario/lista-usuario.component';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { UpdateUsuarioComponent } from './update-usuario/update-usuario.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -16,13 +17,15 @@ import { UpdateUsuarioComponent } from './update-usuario/update-usuario.componen
     CrearUsuarioComponent,
     DetallesUsuarioComponent,
     ListaUsuarioComponent,
-    UpdateUsuarioComponent
+    UpdateUsuarioComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

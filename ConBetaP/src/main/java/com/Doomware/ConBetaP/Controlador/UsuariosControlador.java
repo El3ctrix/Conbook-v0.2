@@ -26,4 +26,10 @@ public class UsuariosControlador {
         return usuario;
     }
 
+    @GetMapping("/login/{correo}")
+    public Usuarios getByCorreo(@PathVariable(value = "correo") String usuarioCorreo) {
+        Usuarios usuario = usr.findByCorreo(usuarioCorreo);
+        return usuario;
+    }
+
 }

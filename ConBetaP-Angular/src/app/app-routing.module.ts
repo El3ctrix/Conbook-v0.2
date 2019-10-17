@@ -4,9 +4,11 @@ import { DetallesUsuarioComponent } from './detalles-usuario/detalles-usuario.co
 import { CrearUsuarioComponent } from './crear-usuario/crear-usuario.component';
 import { ListaUsuarioComponent} from './lista-usuario/lista-usuario.component';
 import { UpdateUsuarioComponent } from './update-usuario/update-usuario.component';
+import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'usuarios', pathMatch: 'full' },
+  { path: '', redirectTo: 'login', pathMatch: 'full' },
+  {path: 'login', component : LoginComponent },
   { path: 'usuarios', component: ListaUsuarioComponent },
   { path: 'add' , component: CrearUsuarioComponent },
   { path: 'update/:id', component: UpdateUsuarioComponent },
