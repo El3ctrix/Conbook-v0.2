@@ -9,7 +9,9 @@
         <th>Nombre</th>
         <th>Correo</th>
         <th>Rol</th>
-        <th>Actions</th>
+        <th></th>
+        <th></th>
+        <th>Acciones</th>
       </tr>
       </thead>
       <tbody>
@@ -17,7 +19,10 @@
         <td>{{usuario.nombre}}</td>
         <td>{{usuario.correo}}</td>
         <td>{{usuario.rol}}</td>
-        <td><button (click)="deleteUsuario(usuario.idusuario)" class="btn btn-danger">Eliminar</button>
+        <td></td>
+        <td></td>
+        <td>
+          <button (click)="deleteUsuario(usuario.idusuario)" class="btn btn-danger">Eliminar</button>
           <button (click)="usuarioDetails(usuario.idusuario)" class="btn btn-info" style="margin-left: 10px">Detalles</button>
         </td>
       </tr>

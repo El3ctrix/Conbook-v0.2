@@ -19,16 +19,17 @@ export class UsuarioService {
   getByCorreo(correo: string) {
     return this.http.get<Usuario>(this.mailUrl + '/' + correo);
   }
-  createUsuario(usuario: any): Observable<any> {
-    return this.http.post(`${this.baseUrl}`, usuario);
+
+  createUsuario(usuario: Usuario) {
+    return this.http.post<Usuario>(this.baseUrl, usuario);
   }
 
   updateUsuario(id: number, value: any): Observable<any> {
     return this.http.put(`${this.baseUrl}/${id}`, value);
   }
 
-  deleteUsuario(id: number): Observable<any> {
-    return this.http.delete(`${this.baseUrl}/${id}`, { responseType: 'text' });
+  deleteUsuario(id: number) {
+    return this.http.delete<Usuario>(this.baseUrl + '/' + id);
   }
 
   getUsuariosList() {

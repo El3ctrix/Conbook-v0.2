@@ -13,7 +13,6 @@ import {UsuarioService} from '../usuario.service';
 export class ListaUsuarioComponent implements OnInit {
 
   usuarios: Observable<Usuario[]>;
-
   constructor(private usuarioService: UsuarioService,
               private router: Router) { }
 
@@ -26,13 +25,17 @@ export class ListaUsuarioComponent implements OnInit {
   }
 
   deleteUsuario(id: number) {
-    this.usuarioService.deleteUsuario(id)
-      .subscribe(
-        data => {
-          console.log(data);
-          this.reloadData();
-        },
-        error => console.log(error));
+    if (id === 1) {
+      alert('¡No se puede Eliminar al Administrador!');
+    } else {
+      this.usuarioService.deleteUsuario(id)
+        .subscribe(
+          data => {
+            console.log(data);
+            this.reloadData();
+          },
+          error => console.log(error));
+    }
   }
   usuarioDetails(idusuario: number) {
     // localStorage.setItem('id', id.toString());

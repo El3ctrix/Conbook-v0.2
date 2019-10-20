@@ -10,4 +10,8 @@ public interface UsuariosRepositorio extends JpaRepository<Usuarios, Integer>{
     List<Usuarios> findAll();
     Usuarios findByIdusuario(int id);
     Usuarios findByCorreo(String correo);
+    Usuarios saveAndFlush(Usuarios usuarios);
+    void deleteInBatch(Iterable<Usuarios> iterable);
+
+    ;
 }
