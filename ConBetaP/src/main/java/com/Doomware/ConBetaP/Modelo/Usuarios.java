@@ -30,6 +30,7 @@ public class Usuarios {
     }
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     public int getIdusuario() {
         return idusuario;
     }

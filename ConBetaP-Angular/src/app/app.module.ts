@@ -10,6 +10,7 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { UpdateUsuarioComponent } from './update-usuario/update-usuario.component';
 import { LoginComponent } from './login/login.component';
+import { ListaLibroComponent } from './lista-libro/lista-libro.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { LoginComponent } from './login/login.component';
     DetallesUsuarioComponent,
     ListaUsuarioComponent,
     UpdateUsuarioComponent,
-    LoginComponent
+    LoginComponent,
+    ListaLibroComponent
   ],
   imports: [
     BrowserModule,

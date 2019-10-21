@@ -5,6 +5,7 @@ import { CrearUsuarioComponent } from './crear-usuario/crear-usuario.component';
 import { ListaUsuarioComponent} from './lista-usuario/lista-usuario.component';
 import { UpdateUsuarioComponent } from './update-usuario/update-usuario.component';
 import { LoginComponent } from './login/login.component';
+import {ListaLibroComponent} from './lista-libro/lista-libro.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
@@ -12,7 +13,8 @@ const routes: Routes = [
   { path: 'usuarios', component: ListaUsuarioComponent },
   { path: 'add' , component: CrearUsuarioComponent },
   { path: 'update/:id', component: UpdateUsuarioComponent },
-  { path: 'details/:id', component: DetallesUsuarioComponent }
+  { path: 'details/:id', component: DetallesUsuarioComponent },
+  { path: 'libros', component: ListaLibroComponent }
 ];
 
 @NgModule({

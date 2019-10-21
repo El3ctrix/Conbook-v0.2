@@ -1,0 +1,33 @@
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h2>Libros</h2>
+  </div>
+  <div class="panel-body">
+    <table class="table table-striped">
+      <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Aprobado</th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th>Acciones</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let libro of libros | async">
+        <td>{{libro.idlibro}}</td>
+        <td>{{libro.nombrelibro}}</td>
+        <td>{{libro.aprobado}}</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>
+          <button (click)="detailsLibro(libro.idlibro)" class="btn btn-info" style="margin-left: 10px">Detalles</button>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

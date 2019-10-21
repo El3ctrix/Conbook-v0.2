@@ -32,7 +32,7 @@ export class LoginComponent implements OnInit {
       });
 
     if (this.email === this.usuario.correo && this.password === this.usuario.contraseña) {
-      this.router.navigate(['usuarios']);
+      this.router.navigate(['libros']);
     }else {
       alert('Acceso Denegado: El correo o la contraseña especificados es erroneo');
     }
