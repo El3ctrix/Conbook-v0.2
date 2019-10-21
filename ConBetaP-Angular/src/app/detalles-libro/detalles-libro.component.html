@@ -1,0 +1,24 @@
+<h2>Detalles del Libro</h2>
+
+<hr/>
+<div *ngIf="libro">
+  <div>
+    <label><b>Nombre: </b></label> {{libro.nombrelibro}}
+  </div>
+  <div>
+    <label><b>Aprobado: </b></label> {{libro.aprobado}}
+  </div>
+  <div>
+    <label><b>ISBN: </b></label> {{libro.codigoisbn}}
+  </div>
+  <div>
+    <label><b>Fecha: </b></label> {{libro.fechadecreacion}}
+  </div>
+  <div>
+    <label><b>Responsable: </b></label>{{libro.responsable}}
+  </div>
+</div>
+
+<br>
+<br>
+<button (click)="list()" class="btn btn-primary">Regresar a Lista de Libros</button><br>

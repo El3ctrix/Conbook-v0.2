@@ -24,7 +24,7 @@ export class ListaLibroComponent implements OnInit {
   }
 
   detailsLibro(id: number){
-
+    this.router.navigate(['detailsl', id]);
   }
 
 }

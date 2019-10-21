@@ -8,6 +8,7 @@ import { Libro } from './Libro';
 export class LibroService {
 
   private baseUrl = 'http://localhost:8080/api/v1/libros';
+  private detailsUrl = 'http://localhost:8080/api/v1/details';
   constructor(private http: HttpClient) { }
 
   getLibrosList() {
@@ -15,6 +16,6 @@ export class LibroService {
   }
 
   getLibro(id: number) {
-    return this.http.get<Libro>(this.baseUrl + '/' + id);
+    return this.http.get<Libro>(this.detailsUrl + '/' + id);
   }
 }

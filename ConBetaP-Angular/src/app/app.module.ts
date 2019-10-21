@@ -11,6 +11,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { UpdateUsuarioComponent } from './update-usuario/update-usuario.component';
 import { LoginComponent } from './login/login.component';
 import { ListaLibroComponent } from './lista-libro/lista-libro.component';
+import { DetallesLibroComponent } from './detalles-libro/detalles-libro.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ListaLibroComponent } from './lista-libro/lista-libro.component';
     ListaUsuarioComponent,
     UpdateUsuarioComponent,
     LoginComponent,
-    ListaLibroComponent
+    ListaLibroComponent,
+    DetallesLibroComponent
   ],
   imports: [
     BrowserModule,

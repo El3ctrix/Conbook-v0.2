@@ -23,7 +23,7 @@ public class LibrosControlador {
         return lbr.findByAprobado(aprobado);
     }
 
-    @GetMapping("/libros/{id}")
+    @GetMapping("/details/{id}")
     public Libros getLibroById(@PathVariable(value="id") int idLibro){
         return lbr.findById(idLibro);
     }
