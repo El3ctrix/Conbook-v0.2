@@ -2,18 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="87e0eb46-d60b-4945-a4f9-3fb5297a9738" name="Default Changelist" comment="Creando Front-End">
-      <change afterPath="$PROJECT_DIR$/src/app/detalles-libro/detalles-libro.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/detalles-libro/detalles-libro.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/detalles-libro/detalles-libro.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/detalles-libro/detalles-libro.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/crear-libro/crear-libro.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/crear-libro/crear-libro.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/crear-libro/crear-libro.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/crear-libro/crear-libro.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/libro.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/libro.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/lista-libro/lista-libro.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/lista-libro/lista-libro.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/crear-usuario/crear-usuario.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/crear-usuario/crear-usuario.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/crear-usuario/crear-usuario.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/crear-usuario/crear-usuario.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ConBetaP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ConBetaP/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ConBetaP/src/main/java/com/Doomware/ConBetaP/Controlador/LibrosControlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ConBetaP/src/main/java/com/Doomware/ConBetaP/Controlador/LibrosControlador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ConBetaP/target/classes/com/Doomware/ConBetaP/Controlador/LibrosControlador.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ConBetaP/target/classes/com/Doomware/ConBetaP/Controlador/LibrosControlador.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -109,7 +108,10 @@
       <workItem from="1571455884375" duration="164000" />
       <workItem from="1571456377823" duration="3277000" />
       <workItem from="1571527455434" duration="17177000" />
-      <workItem from="1571601902733" duration="19239000" />
+      <workItem from="1571601902733" duration="19427000" />
+      <workItem from="1571681667856" duration="534000" />
+      <workItem from="1572121356689" duration="22491000" />
+      <workItem from="1572226996597" duration="9277000" />
     </task>
     <servers />
   </component>

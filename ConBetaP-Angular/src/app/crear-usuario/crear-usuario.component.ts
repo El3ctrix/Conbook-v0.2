@@ -27,18 +27,6 @@ export class CrearUsuarioComponent implements OnInit {
   }
 
 
-  prueba() {
-    switch (this.rol) {
-      case 'Representante':
-        this.rol1 = 2;
-        break;
-      case 'Autor':
-        this.rol1 = 3;
-        break;
-    }
-    alert('El Rol es ' + this.rol + ' y el id del rol es ' + this.rol1);
-  }
-
   save() {
     this.usuario.contraseña = this.password;
     switch (this.rol) {

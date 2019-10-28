@@ -1,0 +1,116 @@
+<h3>Formulario: Solicitud de Publicaci&oacute;n</h3>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<div [hidden]="submitted" style="width: 400px;">
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="nombre">Nombre de la Obra: </label>
+      <input type="text" class="form-control" id="nombre" required [(ngModel)]="libro.nombrelibro" name="nombre">
+    </div>
+
+    <div class="form-group">
+      <label for="nombre">Finalidad:</label>
+      <div>
+        <label>
+          <input type="checkbox" name="Docencia"  [(ngModel)]="dataFinalidad[0].checked">
+          Docencia
+        </label>
+      </div>
+      <div>
+        <label>
+          <input type="checkbox" name="Investigacion" [(ngModel)]="dataFinalidad[1].checked">
+          Investigaci&oacute;n
+        </label>
+      </div>
+      <div>
+        <label>
+          <input type="checkbox" name="Difusion" [(ngModel)]="dataFinalidad[2].checked">
+          Difusi&oacute;n
+        </label>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="nombre"l>En caso de haber elegido Docencia, elegir una o varias de las siguientes opciones:</label>
+      <div>
+        <label>
+          <input type="checkbox" name="Texto"  [(ngModel)]="finalidadTipo[0].checked" [disabled]="!dataFinalidad[0].checked">
+          Texto
+        </label>
+      </div>
+      <div>
+        <label>
+          <input type="checkbox" name="Manual"  [(ngModel)]="finalidadTipo[1].checked" [disabled]="!dataFinalidad[0].checked">
+          Manual
+        </label>
+      </div>
+      <div>
+        <label>
+          <input type="checkbox" name="Antologia"  [(ngModel)]="finalidadTipo[2].checked" [disabled]="!dataFinalidad[0].checked">
+          Antolog&iacute;a
+        </label>
+      </div>
+      <div>
+        <label>
+          <input type="checkbox" name="Consulta"  [(ngModel)]="finalidadTipo[3].checked" [disabled]="!dataFinalidad[0].checked">
+          Consulta
+        </label>
+      </div>
+      <div>
+        <label>
+          <input type="checkbox" name="Otro"  [(ngModel)]="finalidadTipo[4].checked" [disabled]="!dataFinalidad[0].checked">
+          Otro
+        </label>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="nombre">Justificaci&oacute;n y Argumentaci&oacute;n para la publicaci&oacute;n: </label>
+      <input type="text" class="form-control" id="justificacion" required [(ngModel)]="justificacion" name="justificacion">
+    </div>
+
+    <div class="form-group">
+      <label for="nombre">Programa o Asignatura a la que apoyara la propuesta: </label>
+      <input type="text" class="form-control" id="apoyo" required [(ngModel)]="apoyo" name="apoyo">
+    </div>
+
+    <div class="form-group">
+      <label for="nombre">Publico al que va dirigido:  </label>
+      <input type="text" class="form-control" id="publico" required [(ngModel)]="publico" name="publico" >
+    </div>
+
+    <div class="form-group">
+      <label for="nombre">Mercado Potencial: </label>
+      <input type="text" class="form-control" id="mercado" required [(ngModel)]="mercado" name="mercado">
+    </div>
+
+    <div class="form-group">
+      <label for="nombre">Total de ejemplares propuestos para el tiraje: </label>
+      <input type="text" class="form-control" id="ejemplares" required [(ngModel)]="ejemplares" name="ejemplares">
+    </div>
+
+    <div class="form-group">
+      <label for="nombre">Recursos:</label>
+      <div>
+        <label>
+          <input type="checkbox" name="Externos"  [(ngModel)]="financiamiento[0].checked">
+          Recursos Externos (PAPIME, PAPIIT, CONACYT, SEP, otros)
+        </label>
+      </div>
+      <div>
+        <label>
+          <input type="checkbox" name="Externos"  [(ngModel)]="financiamiento[1].checked">
+          Sin recursos
+        </label>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="nombre">Fecha: </label>
+      <input type="date" class="form-control" id="fecha" required [(ngModel)]="fecha" name="fecha">
+    </div>
+
+    <button type="submit" class="btn btn-success">Agregar</button>
+  </form>
+</div>
+
+
