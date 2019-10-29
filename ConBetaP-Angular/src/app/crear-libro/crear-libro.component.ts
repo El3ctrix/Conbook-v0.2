@@ -19,6 +19,9 @@ export class CrearLibroComponent implements OnInit {
   mercado: string;
   ejemplares: string;
   fecha: string;
+  report: string;
+  finalidades: string;
+  finalidadesTipoC: string;
   dataFinalidad = [
     { id: 1, name: 'Docencia', checked: false },
     { id: 2, name: 'Investigacion', checked: false },
@@ -45,7 +48,39 @@ export class CrearLibroComponent implements OnInit {
 
   onSubmit() {
     this.submitted = false;
-    alert(this.dataFinalidad[0].checked);
+    this.finalidades = 'Finalidades: ';
+    this.finalidadesTipoC = 'Tipo de Texto para Docencia: ';
+    this.report = 'Nombre de la Obra: ' + this.libro.nombrelibro + '\n';
+    if (this.dataFinalidad[0].checked) {
+      this.finalidades += this.dataFinalidad[0].name + '\n';
+    } else {
+      if (this.dataFinalidad[1].checked){
+        this.finalidades += this.dataFinalidad[1].name + '\n';
+      } else {
+        if (this.dataFinalidad[2].checked){
+          this.finalidades += this.dataFinalidad[2].name + '\n';
+        }
+      }
+    }
+    if (this.dataFinalidad[0].checked){
+      if (this.finalidadTipo[0].checked) {
+        this.finalidadesTipoC += this.finalidadTipo[0].name + '\n';
+      } else {
+        if (this.finalidadTipo[1].checked) {
+          this.finalidadesTipoC += this.finalidadTipo[1].name + '\n';
+        } else {
+          if (this.finalidadTipo[2].checked) {
+            this.finalidadesTipoC += this.finalidadTipo[2].name + '\n';
+          } else {
+            if (this.finalidadTipo[3].checked) {
+              this.finalidadesTipoC += this.finalidadTipo[3].name + '\n';
+            }
+          }
+        }
+      }
+    }
+    this.report += this.finalidades + '\n';
+    alert(this.report);
   }
 }
 
