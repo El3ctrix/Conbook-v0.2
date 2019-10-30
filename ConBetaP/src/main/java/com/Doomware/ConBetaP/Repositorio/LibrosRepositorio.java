@@ -9,4 +9,5 @@ public interface LibrosRepositorio extends JpaRepository<Libros, Integer> {
     List<Libros> findAll();
     List<Libros> findByAprobado(boolean aprobado);
     Libros findById(int id);
+    Libros saveAndFlush(Libros libros);
 }

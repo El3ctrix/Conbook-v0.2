@@ -27,4 +27,10 @@ public class LibrosControlador {
     public Libros getLibroById(@PathVariable(value="id") int idLibro){
         return lbr.findById(idLibro);
     }
+
+    @PostMapping("/libros")
+    public Libros createLibros(@RequestBody Libros libro){
+        Libros libros = lbr.saveAndFlush(libro);
+        return libros;
+    }
 }

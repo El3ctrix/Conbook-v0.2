@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { LibroService } from '../libro.service';
 import { Libro } from '../Libro';
 import { Router } from '@angular/router';
+import * as jsPDF from 'jspdf';
 
 
 @Component({
@@ -19,9 +20,9 @@ export class CrearLibroComponent implements OnInit {
   mercado: string;
   ejemplares: string;
   fecha: string;
-  report: string;
-  finalidades: string;
-  finalidadesTipoC: string;
+  tipoF: string;
+  template1: string;
+  template2: string;
   dataFinalidad = [
     { id: 1, name: 'Docencia', checked: false },
     { id: 2, name: 'Investigacion', checked: false },
@@ -48,39 +49,61 @@ export class CrearLibroComponent implements OnInit {
 
   onSubmit() {
     this.submitted = false;
-    this.finalidades = 'Finalidades: ';
-    this.finalidadesTipoC = 'Tipo de Texto para Docencia: ';
-    this.report = 'Nombre de la Obra: ' + this.libro.nombrelibro + '\n';
+    this.libro.aprobado = false;
+    this.libro.codigoisbn = 'Sin Codigo';
+    this.libro.responsable = localStorage.getItem('nombre');
+    this.libroService.createLibro(this.libro)
+      .subscribe(data => console.log(data), error => console.log(error));
+    const doc = new jsPDF('p', 'mm', 'a4');
+    this.tipoF = 'Tipo: ';
+    this.template1 = 'SOLICITUD DE PUBLICACIÓN\n' +
+      '\nCOMITÉ EDITORIAL DE LA FACULTAD DE CIENCIAS\n' +
+      'Presente\n' + 'Por este conducto someto (sometemos) a consideración la obra "' +
+      this.libro.nombrelibro + '" \npara ser publicada por esta Facultad.\n' +
+      '\nA continuación presento la justificación y argumentación para la publicación \nde la obra:\n' +
+      this.justificacion + '\nPor lo que su finalidad es: ';
+    let i = 0;
     if (this.dataFinalidad[0].checked) {
-      this.finalidades += this.dataFinalidad[0].name + '\n';
-    } else {
-      if (this.dataFinalidad[1].checked){
-        this.finalidades += this.dataFinalidad[1].name + '\n';
-      } else {
-        if (this.dataFinalidad[2].checked){
-          this.finalidades += this.dataFinalidad[2].name + '\n';
+      i += 1;
+      this.template1 += '\n' + i + '. ' + this.dataFinalidad[0].name + '\n';
+      for (let n = 0; n < 5; n++) {
+        if (this.finalidadTipo[n].checked) {
+          this.tipoF += this.finalidadTipo[n].name + '\n';
         }
       }
+      this.template1 += this.tipoF;
+      this.template1 += 'Justifique a qué programa (s) y asignatura (s) apoyará la propuesta: ' +
+        this.apoyo;
     }
-    if (this.dataFinalidad[0].checked){
-      if (this.finalidadTipo[0].checked) {
-        this.finalidadesTipoC += this.finalidadTipo[0].name + '\n';
-      } else {
-        if (this.finalidadTipo[1].checked) {
-          this.finalidadesTipoC += this.finalidadTipo[1].name + '\n';
-        } else {
-          if (this.finalidadTipo[2].checked) {
-            this.finalidadesTipoC += this.finalidadTipo[2].name + '\n';
-          } else {
-            if (this.finalidadTipo[3].checked) {
-              this.finalidadesTipoC += this.finalidadTipo[3].name + '\n';
-            }
-          }
-        }
-      }
+    if (this.dataFinalidad[1].checked) {
+      i += 1;
+      this.template1 += i + '. ' + this.dataFinalidad[1].name + '\n';
     }
-    this.report += this.finalidades + '\n';
-    alert(this.report);
+    if (this.dataFinalidad[2].checked) {
+      i += 1;
+      this.template1 += i + '. ' + this.dataFinalidad[2].name + '\n';
+    }
+    if (this.dataFinalidad[1].checked || this.dataFinalidad[2].checked) {
+      this.template1 += 'Publico al que va dirigido: ' + this.publico + '\n';
+    }
+    this.template1 += '\nEl mercado potencial es de (cuántos grupos, alumnos y/o instituciones) ' +
+      this.mercado + ', \npor lo que se propone un tiraje de ' + this.ejemplares + ' ejemplares.\n' +
+    '\nFinanciamiento: \n';
+    if (this.financiamiento[0].checked) {
+      this.template1 += this.financiamiento[0].name + '\n';
+    }
+    if (this.financiamiento[1].checked) {
+      this.template1 += this.financiamiento[1].name + '\n';
+    }
+    this.template1 += 'Declaro que el manuscrito propuesto no se encuentra sometido a' +
+      '\nconsideración de otra institución o editorial para su publicación, y que no ha' +
+      '\nsido publicado por ningún otro medio incluyendo publicaciones electrónicas o ' +
+      '\nbase de datos de naturaleza pública.\n' +
+      'Si el material no está completo o presenta deficiencias gramaticales o de len-' +
+      '\nguaje aceptaré que se me devuelva para su reescritura antes de ser enviado' +
+      '\na los revisores o antes de ser aceptado.\n' + '\nFecha: ' + this.fecha;
+    doc.text(this.template1, 10, 10);
+    doc.save('Text.pdf');
   }
 }
 

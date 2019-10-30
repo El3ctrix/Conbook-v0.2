@@ -18,4 +18,8 @@ export class LibroService {
   getLibro(id: number) {
     return this.http.get<Libro>(this.detailsUrl + '/' + id);
   }
+
+  createLibro(libro: Libro) {
+    return this.http.post<Libro>(this.baseUrl, libro);
+  }
 }
