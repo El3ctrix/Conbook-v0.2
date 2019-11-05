@@ -18,17 +18,19 @@ public class Libros {
     private String codigoisbn;
     private String fechadecreacion;
     private String responsable;
+    private int estado;
 
     public Libros() {}
 
     public Libros(int idlibro, String nombrelibro, boolean aprobado, String codigoisbn,
-                  byte archivos, String fechadecreacion, String responsable){
+                  byte archivos, String fechadecreacion, String responsable, int estado){
         this.idlibro = idlibro;
         this.nombrelibro = nombrelibro;
         this.aprobado = aprobado;
         this.codigoisbn = codigoisbn;
         this.fechadecreacion = fechadecreacion;
         this.responsable = responsable;
+        this.estado = estado;
     }
 
     @Id
@@ -86,4 +88,9 @@ public class Libros {
     public void setResponsable(String responsable) {
         this.responsable = responsable;
     }
+
+    @Column(name = "estado")
+    public int getEstado() { return estado; }
+
+    public void setEstado(int estado) { this.estado = estado; }
 }

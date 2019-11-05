@@ -8,6 +8,7 @@ import { LoginComponent } from './login/login.component';
 import {ListaLibroComponent} from './lista-libro/lista-libro.component';
 import { DetallesLibroComponent } from './detalles-libro/detalles-libro.component';
 import {CrearLibroComponent} from './crear-libro/crear-libro.component';
+import {UpdateLibroComponent} from './update-libro/update-libro.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
@@ -18,7 +19,8 @@ const routes: Routes = [
   { path: 'details/:id', component: DetallesUsuarioComponent },
   { path: 'libros', component: ListaLibroComponent },
   { path: 'detailsl/:id', component: DetallesLibroComponent },
-  { path: 'addLibro', component: CrearLibroComponent }
+  { path: 'addLibro', component: CrearLibroComponent },
+  { path: 'updateL/:id', component: UpdateLibroComponent }
 ];
 
 @NgModule({

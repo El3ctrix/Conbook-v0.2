@@ -6,9 +6,6 @@
     <label><b>Nombre: </b></label> {{libro.nombrelibro}}
   </div>
   <div>
-    <label><b>Aprobado: </b></label> {{libro.aprobado}}
-  </div>
-  <div>
     <label><b>ISBN: </b></label> {{libro.codigoisbn}}
   </div>
   <div>
@@ -16,6 +13,9 @@
   </div>
   <div>
     <label><b>Responsable: </b></label>{{libro.responsable}}
+  </div>
+  <div>
+    <label><b>Estado: </b></label>{{options[libro.estado-1].name}}
   </div>
 </div>
 

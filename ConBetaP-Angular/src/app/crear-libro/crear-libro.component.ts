@@ -52,6 +52,7 @@ export class CrearLibroComponent implements OnInit {
     this.libro.aprobado = false;
     this.libro.codigoisbn = 'Sin Codigo';
     this.libro.responsable = localStorage.getItem('nombre');
+    this.libro.estado = 1;
     this.libroService.createLibro(this.libro)
       .subscribe(data => console.log(data), error => console.log(error));
     const doc = new jsPDF('p', 'mm', 'a4');

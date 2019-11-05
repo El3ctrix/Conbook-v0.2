@@ -8,7 +8,7 @@
       <tr>
         <th>ID</th>
         <th>Nombre</th>
-        <th>Aprobado</th>
+        <th>Estado</th>
         <th></th>
         <th></th>
         <th></th>
@@ -19,11 +19,12 @@
       <tr *ngFor="let libro of libros | async">
         <td>{{libro.idlibro}}</td>
         <td>{{libro.nombrelibro}}</td>
-        <td>{{libro.aprobado}}</td>
+        <td>{{options[libro.estado-1].name}}</td>
         <td></td>
         <td></td>
         <td></td>
         <td>
+          <button (click)="updateLibro(libro.idlibro)" class="btn btn-danger">Actualizar Estado</button>
           <button (click)="detailsLibro(libro.idlibro)" class="btn btn-info" style="margin-left: 10px">Detalles</button>
         </td>
       </tr>

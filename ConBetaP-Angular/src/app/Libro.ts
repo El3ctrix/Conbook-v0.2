@@ -5,4 +5,5 @@ export class Libro {
   codigoisbn: string;
   fechadecreacion: string;
   responsable: string;
+  estado: number;
 }

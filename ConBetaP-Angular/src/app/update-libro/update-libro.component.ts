@@ -1,17 +1,20 @@
 import { Component, OnInit } from '@angular/core';
-import { Libro } from '../Libro';
 import { LibroService } from '../libro.service';
-import { ActivatedRoute, Router } from '@angular/router';
+import { Libro } from '../Libro';
+import {ActivatedRoute, Router} from '@angular/router';
 
 @Component({
-  selector: 'app-detalles-libro',
-  templateUrl: './detalles-libro.component.html',
-  styleUrls: ['./detalles-libro.component.css']
+  selector: 'app-update-libro',
+  templateUrl: './update-libro.component.html',
+  styleUrls: ['./update-libro.component.css']
 })
-export class DetallesLibroComponent implements OnInit {
+export class UpdateLibroComponent implements OnInit {
 
+  submitted: boolean;
   libro: Libro;
   id: number;
+  estado: string;
+  usr : string;
   options = [
     { name: 'Solicitado', value: 1, rep: false },
     { name: 'En revisión', value: 2, rep: false },
@@ -25,14 +28,15 @@ export class DetallesLibroComponent implements OnInit {
     { name: 'En imprenta', value: 10, rep: false },
     { name: 'A la venta', value: 11, rep: false }
   ];
-
-  constructor(private route: ActivatedRoute, private router: Router,
-              private libroService: LibroService) { }
+  constructor(private route: ActivatedRoute,
+              private libroService: LibroService,
+              private router: Router) { }
 
   ngOnInit() {
+    let temp = localStorage.getItem('nombre');
+    this.usr = temp.valueOf();
     this.libro = new Libro();
     this.id = this.route.snapshot.params.id;
-
     this.libroService.getLibro(this.id)
       .subscribe(data => {
         console.log(data);
@@ -40,7 +44,7 @@ export class DetallesLibroComponent implements OnInit {
       });
   }
 
-  list() {
+  onSubmit(){
     this.router.navigate(['libros']);
   }
 

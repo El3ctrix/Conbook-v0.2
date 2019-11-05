@@ -2,32 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="87e0eb46-d60b-4945-a4f9-3fb5297a9738" name="Default Changelist" comment="Creando Front-End">
-      <change afterPath="$PROJECT_DIR$/node_modules/@types/jspdf/index.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/@types/jspdf/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/angular-pdf-generator/angular-pdf-generator.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/angular-pdf-generator/angular-pdf-generator.metadata.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/angular-pdf-generator/index.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/angular-pdf-generator/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/angular-pdf-generator/sample.component.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/angular-pdf-generator/sample.directive.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/angular-pdf-generator/sample.pipe.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/angular-pdf-generator/sample.service.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/jspdf/dist/jspdf.debug.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/jspdf/dist/jspdf.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/jspdf/dist/jspdf.node.debug.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/jspdf/dist/jspdf.node.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/jspdf/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/update-libro/update-libro.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/update-libro/update-libro.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/update-libro/update-libro.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/update-libro/update-libro.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Libro.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Libro.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/crear-libro/crear-libro.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/crear-libro/crear-libro.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/libro.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/libro.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/detalles-libro/detalles-libro.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/detalles-libro/detalles-libro.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/detalles-libro/detalles-libro.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/detalles-libro/detalles-libro.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/lista-libro/lista-libro.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/lista-libro/lista-libro.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/lista-libro/lista-libro.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/lista-libro/lista-libro.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/login/login.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ConBetaP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ConBetaP/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ConBetaP/src/main/java/com/Doomware/ConBetaP/Controlador/LibrosControlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ConBetaP/src/main/java/com/Doomware/ConBetaP/Controlador/LibrosControlador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ConBetaP/src/main/java/com/Doomware/ConBetaP/Repositorio/LibrosRepositorio.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ConBetaP/src/main/java/com/Doomware/ConBetaP/Repositorio/LibrosRepositorio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ConBetaP/target/classes/com/Doomware/ConBetaP/Controlador/LibrosControlador.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ConBetaP/target/classes/com/Doomware/ConBetaP/Controlador/LibrosControlador.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ConBetaP/target/classes/com/Doomware/ConBetaP/Repositorio/LibrosRepositorio.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ConBetaP/target/classes/com/Doomware/ConBetaP/Repositorio/LibrosRepositorio.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConBetaP/src/main/java/com/Doomware/ConBetaP/Modelo/Libros.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ConBetaP/src/main/java/com/Doomware/ConBetaP/Modelo/Libros.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConBetaP/target/classes/com/Doomware/ConBetaP/Modelo/Libros.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ConBetaP/target/classes/com/Doomware/ConBetaP/Modelo/Libros.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -131,6 +123,8 @@
       <workItem from="1572370536458" duration="1052000" />
       <workItem from="1572376864992" duration="2441000" />
       <workItem from="1572397003874" duration="14466000" />
+      <workItem from="1572462924377" duration="907000" />
+      <workItem from="1572911749607" duration="13399000" />
     </task>
     <servers />
   </component>
