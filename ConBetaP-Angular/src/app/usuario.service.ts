@@ -10,6 +10,7 @@ export class UsuarioService {
 
   private baseUrl = 'http://localhost:8080/api/v1/usuarios';
   private mailUrl = 'http://localhost:8080/api/v1/login';
+  private updateUrl = 'http://localhost:8080/api/v1/update';
   constructor(private http: HttpClient) { }
 
   getUsuario(id: number) {
@@ -25,7 +26,7 @@ export class UsuarioService {
   }
 
   updateUsuario(id: number, usuario: Usuario) {
-    return this.http.put(this.baseUrl + '/' + id, usuario);
+    return this.http.put(this.updateUrl + '/' + id, usuario);
   }
 
   deleteUsuario(id: number) {

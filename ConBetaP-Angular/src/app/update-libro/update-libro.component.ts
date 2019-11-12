@@ -54,11 +54,14 @@ export class UpdateLibroComponent implements OnInit {
       this.libro.aprobado = true;
     }
     */
-    Swal.fire(
-      'Actualizar Información',
-      '¡Información actializada con Exito!',
-      'success'
-    )
+    Swal.fire({
+      title: 'Actualizar Información',
+      text: '¡Información actualizada con Exito!',
+      icon: 'success',
+      confirmButtonText: 'Entendido'
+    }).then(() => {
+      this.router.navigate(['libros']);
+    });
     // this.router.navigate(['libros']);
   }
 

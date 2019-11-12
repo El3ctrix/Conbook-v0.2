@@ -13,6 +13,7 @@ export class UpdateUsuarioComponent implements OnInit {
 
   id: number;
   usuario: Usuario;
+  submitted = false;
 
   constructor(private route: ActivatedRoute, private router: Router,
               private usuarioService: UsuarioService) { }
@@ -33,6 +34,7 @@ export class UpdateUsuarioComponent implements OnInit {
     this.usuarioService.updateUsuario(this.id, this.usuario)
       .subscribe(data => console.log(data));
     this.usuario = new Usuario();
+    this.submitted = true;
     this.gotoList();
   }
 
@@ -41,7 +43,7 @@ export class UpdateUsuarioComponent implements OnInit {
   }
 
   gotoList() {
-    this.router.navigate(['/employees']);
+    this.router.navigate(['/usuarios']);
   }
 
 }

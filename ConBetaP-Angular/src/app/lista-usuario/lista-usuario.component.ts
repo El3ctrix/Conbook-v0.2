@@ -36,8 +36,13 @@ export class ListaUsuarioComponent implements OnInit {
           error => console.log(error));
     }
   }
+
   usuarioDetails(idusuario: number) {
     // localStorage.setItem('id', id.toString());
     this.router.navigate(['details', idusuario]);
+  }
+
+  updateUsuario(idusuario: number) {
+    this.router.navigate(['update', idusuario]);
   }
 }

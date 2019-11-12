@@ -51,6 +51,7 @@ export class CrearLibroComponent implements OnInit {
     this.submitted = false;
     this.libro.aprobado = false;
     this.libro.codigoisbn = 'Sin Codigo';
+    this.libro.fechadecreacion = this.fecha;
     this.libro.responsable = localStorage.getItem('nombre');
     this.libro.estado = 1;
     this.libroService.createLibro(this.libro)

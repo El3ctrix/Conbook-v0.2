@@ -30,6 +30,12 @@ public class UsuariosControlador {
         return usuario;
     }
 
+    @PutMapping("/update/{id}")
+    public Usuarios updateUsuario(@RequestBody Usuarios u, @PathVariable("id") int id){
+        u.setIdusuario(id);
+        return usr.saveAndFlush(u);
+    }
+
     @GetMapping("/login/{correo}")
     public Usuarios getByCorreo(@PathVariable(value = "correo") String usuarioCorreo) {
         Usuarios usuario = usr.findByCorreo(usuarioCorreo);
@@ -52,5 +58,7 @@ public class UsuariosControlador {
         }
         return usuario;
     }
+
+
 
 }
