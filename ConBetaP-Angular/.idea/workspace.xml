@@ -2,21 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="87e0eb46-d60b-4945-a4f9-3fb5297a9738" name="Default Changelist" comment="Creando Front-End">
-      <change afterPath="$PROJECT_DIR$/src/app/update-libro/update-libro.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/update-libro/update-libro.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/update-libro/update-libro.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/update-libro/update-libro.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Libro.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Libro.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/crear-libro/crear-libro.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/crear-libro/crear-libro.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/detalles-libro/detalles-libro.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/detalles-libro/detalles-libro.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/detalles-libro/detalles-libro.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/detalles-libro/detalles-libro.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/lista-libro/lista-libro.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/lista-libro/lista-libro.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/lista-libro/lista-libro.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/lista-libro/lista-libro.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/login/login.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/update-libro/update-libro.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/update-libro/update-libro.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/update-libro/update-libro.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/update-libro/update-libro.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/update-usuario/update-usuario.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/update-usuario/update-usuario.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/usuario.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/usuario.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ConBetaP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ConBetaP/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ConBetaP/src/main/java/com/Doomware/ConBetaP/Modelo/Libros.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ConBetaP/src/main/java/com/Doomware/ConBetaP/Modelo/Libros.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ConBetaP/target/classes/com/Doomware/ConBetaP/Modelo/Libros.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ConBetaP/target/classes/com/Doomware/ConBetaP/Modelo/Libros.class" afterDir="false" />
@@ -125,6 +117,8 @@
       <workItem from="1572397003874" duration="14466000" />
       <workItem from="1572462924377" duration="907000" />
       <workItem from="1572911749607" duration="13399000" />
+      <workItem from="1572981672243" duration="1930000" />
+      <workItem from="1573501311617" duration="11815000" />
     </task>
     <servers />
   </component>

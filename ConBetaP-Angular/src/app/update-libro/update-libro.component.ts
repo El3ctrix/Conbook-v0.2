@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { LibroService } from '../libro.service';
 import { Libro } from '../Libro';
 import {ActivatedRoute, Router} from '@angular/router';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-update-libro',
@@ -14,7 +15,8 @@ export class UpdateLibroComponent implements OnInit {
   libro: Libro;
   id: number;
   estado: string;
-  usr : string;
+  usr: string;
+  currentState: number;
   options = [
     { name: 'Solicitado', value: 1, rep: false },
     { name: 'En revisión', value: 2, rep: false },
@@ -26,7 +28,8 @@ export class UpdateLibroComponent implements OnInit {
     { name: 'Con ISBN', value: 8, rep: false },
     { name: 'En formación', value: 9, rep: false },
     { name: 'En imprenta', value: 10, rep: false },
-    { name: 'A la venta', value: 11, rep: false }
+    { name: 'A la venta', value: 11, rep: false },
+    { name: 'Cotizacion', value: 12, rep: false }
   ];
   constructor(private route: ActivatedRoute,
               private libroService: LibroService,
@@ -42,10 +45,21 @@ export class UpdateLibroComponent implements OnInit {
         console.log(data);
         this.libro = data;
       });
+    this.currentState = this.libro.estado;
   }
 
-  onSubmit(){
-    this.router.navigate(['libros']);
+  onSubmit() {
+    /*
+    if (this.libro.codigoisbn !== 'Sin Codigo') {
+      this.libro.aprobado = true;
+    }
+    */
+    Swal.fire(
+      'Actualizar Información',
+      '¡Información actializada con Exito!',
+      'success'
+    )
+    // this.router.navigate(['libros']);
   }
 
 }

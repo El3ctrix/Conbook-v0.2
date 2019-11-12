@@ -35,7 +35,6 @@ public class Libros {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name="idlibro")
     public int getIdlibro() {
         return idlibro;
     }

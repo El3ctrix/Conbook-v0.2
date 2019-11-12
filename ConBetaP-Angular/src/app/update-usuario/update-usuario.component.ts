@@ -20,21 +20,18 @@ export class UpdateUsuarioComponent implements OnInit {
   ngOnInit() {
     this.usuario = new Usuario();
 
-    this.id = this.route.snapshot.params['id'];
+    this.id = this.route.snapshot.params.id;
 
     this.usuarioService.getUsuario(this.id)
       .subscribe(data => {
         console.log(data);
         this.usuario = data;
-      },
-        // tslint:disable-next-line:no-shadowed-variable
-        error => console.log(error));
+      });
   }
 
   updateUsuario() {
     this.usuarioService.updateUsuario(this.id, this.usuario)
-    // tslint:disable-next-line:no-shadowed-variable
-      .subscribe(data => console.log(data), error => console.log(error));
+      .subscribe(data => console.log(data));
     this.usuario = new Usuario();
     this.gotoList();
   }
