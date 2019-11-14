@@ -49,21 +49,17 @@ export class ListaUsuarioComponent implements OnInit {
     this.router.navigate(['update', idusuario]);
   }
 
-  sendMail(idusuario: number) {
-    this.usuarioService.getUsuario(idusuario)
-      .subscribe(data => {
-        this.usuario = data;
-      });
+  sendMail(idusuario: string) {
     const swalWithBootstrapButtons = Swal.mixin({
       customClass: {
         confirmButton: 'btn btn-success',
         cancelButton: 'btn btn-danger'
       },
       buttonsStyling: false
-    })
+    });
     swalWithBootstrapButtons.fire({
       title: 'Enviar Solicitud de Publicacion',
-      text: '¿Desea enviar Solicitud de Publicacion a ' + this.usuario.correo + '?',
+      text: '¿Desea enviar Solicitud de Publicacion a ' + idusuario + '?',
       icon: 'question',
       showCancelButton: true,
       confirmButtonText: 'Enviar Correo',
@@ -76,9 +72,7 @@ export class ListaUsuarioComponent implements OnInit {
         icon: 'success',
         confirmButtonText: 'Entendido'
         }
-      ).then(() => {
-        this.usuario = new Usuario();
-      })
+      );
     } else if (result.dismiss === Swal.DismissReason.cancel) {
       swalWithBootstrapButtons.fire({
           title: 'Envio de correo cancelado',
@@ -86,8 +80,6 @@ export class ListaUsuarioComponent implements OnInit {
           icon: 'error',
           confirmButtonText: 'Entendido'
         }
-      ).then(() => {
-        this.usuario = new Usuario();
-      }) } }));
+      ); } }));
   }
 }
