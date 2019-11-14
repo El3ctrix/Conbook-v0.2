@@ -1,14 +1,10 @@
 package com.Doomware.ConBetaP.Controlador;
 
-import com.Doomware.ConBetaP.Exception.ResourceNotFoundException;
 import com.Doomware.ConBetaP.Modelo.Usuarios;
 import com.Doomware.ConBetaP.Repositorio.UsuariosRepositorio;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.http.ResponseEntity;
 
-import javax.jnlp.UnavailableServiceException;
-import javax.validation.Valid;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -58,7 +54,4 @@ public class UsuariosControlador {
         }
         return usuario;
     }
-
-
-
 }

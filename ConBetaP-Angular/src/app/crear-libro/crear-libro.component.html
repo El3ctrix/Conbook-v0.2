@@ -108,14 +108,25 @@
       <label for="nombre">Fecha: </label>
       <input type="date" class="form-control" id="fecha" required [(ngModel)]="fecha" name="fecha">
     </div>
-    <input
-      style="display: none"
-      type="file"
-      accept="application/pdf"
-      (change)="onFileSelected($event)"
-      #fileInput>
-    <button type="button" (click)="fileInput.click()">Elegir Archivo</button>
-    <button type="button" (click)="onUpload()">Subir</button>
+
+    <div class="form-group">
+      <label for="nombre">Archivos: </label>
+      <tr></tr>
+      <input
+        style="display: none"
+        type="file"
+        accept="application/pdf"
+        (change)="onFileSelected($event)"
+        #fileInput>
+      <button type="button" class="btn btn-secondary" (click)="fileInput.click()">Elegir Archivo</button>
+      <button type="button" class="btn btn-warning" (click)="onUpload()" style="margin-left: 10px" [disabled]="!flag">Subir</button>
+      <label style="margin-left: 10px"> Archivo 1</label>
+      <tr></tr>
+      <br>
+      <button type="button" class="btn btn-secondary">Elegir Archivo</button>
+      <button type="button" class="btn btn-warning" style="margin-left: 10px" [disabled]="!flag">Subir</button>
+      <label style="margin-left: 10px"> Archivo 2</label>
+    </div>
     <button type="submit" class="btn btn-success">Agregar</button>
   </form>
 </div>

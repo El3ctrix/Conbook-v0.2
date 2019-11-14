@@ -23,6 +23,7 @@ export class CrearLibroComponent implements OnInit {
   tipoF: string;
   template1: string;
   selectedFile: File = null;
+  flag = false;
   dataFinalidad = [
     { id: 1, name: 'Docencia', checked: false },
     { id: 2, name: 'Investigacion', checked: false },
@@ -49,6 +50,7 @@ export class CrearLibroComponent implements OnInit {
   }
 
   onFileSelected(event) {
+    this.flag = true;
     this.selectedFile = event.target.files[0] as File;
   }
 
@@ -63,6 +65,8 @@ export class CrearLibroComponent implements OnInit {
         console.log(res);
       });
   }
+
+  missingData(){}
 
   onSubmit() {
     this.submitted = false;
@@ -122,7 +126,7 @@ export class CrearLibroComponent implements OnInit {
       '\nguaje aceptaré que se me devuelva para su reescritura antes de ser enviado' +
       '\na los revisores o antes de ser aceptado.\n' + '\nFecha: ' + this.fecha;
     doc.text(this.template1, 10, 10);
-    doc.save('Text.pdf');
+    doc.save('Solicitud' + this.libro.nombrelibro + '.pdf');
   }
 }
 

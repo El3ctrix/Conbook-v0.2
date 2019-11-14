@@ -2,14 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c38358b6-dc05-424e-b70e-91e67fdbb65d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_mail_javax_mail_1_6_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_mail_2_1_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_5_1_10_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/Doomware/ConBetaP/Controlador/MailControlador.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ConBetaP-Angular/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ConBetaP-Angular/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ConBetaP-Angular/src/app/crear-libro/crear-libro.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ConBetaP-Angular/src/app/crear-libro/crear-libro.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ConBetaP-Angular/src/app/crear-libro/crear-libro.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../ConBetaP-Angular/src/app/crear-libro/crear-libro.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConBetaP-Angular/src/app/lista-usuario/lista-usuario.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ConBetaP-Angular/src/app/lista-usuario/lista-usuario.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConBetaP-Angular/src/app/lista-usuario/lista-usuario.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../ConBetaP-Angular/src/app/lista-usuario/lista-usuario.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConBetaP.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ConBetaP.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/Doomware/ConBetaP/Controlador/LibrosControlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Doomware/ConBetaP/Controlador/LibrosControlador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Doomware/ConBetaP/Controlador/UsuariosControlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Doomware/ConBetaP/Controlador/UsuariosControlador.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/Doomware/ConBetaP/Controlador/LibrosControlador.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Doomware/ConBetaP/Controlador/LibrosControlador.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Doomware/ConBetaP/Controlador/UsuariosControlador.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Doomware/ConBetaP/Controlador/UsuariosControlador.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,6 +44,7 @@
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../ConBetaP-Angular" />
@@ -99,7 +109,7 @@
       <workItem from="1573498559772" duration="14193000" />
       <workItem from="1573586715116" duration="673000" />
       <workItem from="1573672870667" duration="798000" />
-      <workItem from="1573687198667" duration="10850000" />
+      <workItem from="1573687198667" duration="16186000" />
     </task>
     <servers />
   </component>
