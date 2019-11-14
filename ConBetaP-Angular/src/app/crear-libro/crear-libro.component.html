@@ -108,7 +108,14 @@
       <label for="nombre">Fecha: </label>
       <input type="date" class="form-control" id="fecha" required [(ngModel)]="fecha" name="fecha">
     </div>
-
+    <input
+      style="display: none"
+      type="file"
+      accept="application/pdf"
+      (change)="onFileSelected($event)"
+      #fileInput>
+    <button type="button" (click)="fileInput.click()">Elegir Archivo</button>
+    <button type="button" (click)="onUpload()">Subir</button>
     <button type="submit" class="btn btn-success">Agregar</button>
   </form>
 </div>

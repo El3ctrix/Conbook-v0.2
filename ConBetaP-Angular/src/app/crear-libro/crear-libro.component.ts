@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { LibroService } from '../libro.service';
 import { Libro } from '../Libro';
 import { Router } from '@angular/router';
+import { HttpClient } from '@angular/common/http';
 import * as jsPDF from 'jspdf';
 
 
@@ -11,7 +12,6 @@ import * as jsPDF from 'jspdf';
   styleUrls: ['./crear-libro.component.css']
 })
 export class CrearLibroComponent implements OnInit {
-
   libro = new Libro();
   submitted: boolean;
   justificacion: string;
@@ -22,7 +22,7 @@ export class CrearLibroComponent implements OnInit {
   fecha: string;
   tipoF: string;
   template1: string;
-  template2: string;
+  selectedFile: File = null;
   dataFinalidad = [
     { id: 1, name: 'Docencia', checked: false },
     { id: 2, name: 'Investigacion', checked: false },
@@ -41,10 +41,27 @@ export class CrearLibroComponent implements OnInit {
   ];
 
   constructor(private libroService: LibroService,
-              private router: Router) {
+              private router: Router,
+              private http: HttpClient) {
   }
 
   ngOnInit() {
+  }
+
+  onFileSelected(event) {
+    this.selectedFile = event.target.files[0] as File;
+  }
+
+  onUpload() {
+    const formData = new FormData();
+    formData.append('file', this.selectedFile, this.selectedFile.name);
+    this.http.post('http://localhost:8080/api/v1/upload/', formData ,{
+      reportProgress: true,
+      responseType: 'text'
+    })
+      .subscribe(res => {
+        console.log(res);
+      });
   }
 
   onSubmit() {
