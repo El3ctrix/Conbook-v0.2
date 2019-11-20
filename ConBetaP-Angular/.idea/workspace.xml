@@ -3,9 +3,20 @@
   <component name="ChangeListManager">
     <list default="true" id="87e0eb46-d60b-4945-a4f9-3fb5297a9738" name="Default Changelist" comment="Creando Front-End">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/crear-libro/crear-libro.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/crear-libro/crear-libro.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/crear-usuario/crear-usuario.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/crear-usuario/crear-usuario.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/lista-usuario/lista-usuario.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/lista-usuario/lista-usuario.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/lista-usuario/lista-usuario.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/lista-usuario/lista-usuario.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/usuario.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/usuario.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ConBetaP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ConBetaP/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConBetaP/ConBetaP.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../ConBetaP/ConBetaP.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConBetaP/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ConBetaP/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConBetaP/src/main/java/com/Doomware/ConBetaP/Controlador/MailControlador.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConBetaP/src/main/java/com/Doomware/ConBetaP/Controlador/UsuariosControlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ConBetaP/src/main/java/com/Doomware/ConBetaP/Controlador/UsuariosControlador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConBetaP/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../ConBetaP/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConBetaP/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../ConBetaP/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConBetaP/target/classes/com/Doomware/ConBetaP/Controlador/MailControlador.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConBetaP/target/classes/com/Doomware/ConBetaP/Controlador/UsuariosControlador.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ConBetaP/target/classes/com/Doomware/ConBetaP/Controlador/UsuariosControlador.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -117,6 +128,8 @@
       <workItem from="1573672819204" duration="1604000" />
       <workItem from="1573686687471" duration="18427000" />
       <workItem from="1573752046044" duration="700000" />
+      <workItem from="1573758905847" duration="2507000" />
+      <workItem from="1574211450349" duration="10653000" />
     </task>
     <servers />
   </component>

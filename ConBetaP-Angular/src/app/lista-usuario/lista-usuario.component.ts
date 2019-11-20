@@ -49,7 +49,7 @@ export class ListaUsuarioComponent implements OnInit {
     this.router.navigate(['update', idusuario]);
   }
 
-  sendMail(idusuario: string) {
+  sendMail(usuario: Usuario) {
     const swalWithBootstrapButtons = Swal.mixin({
       customClass: {
         confirmButton: 'btn btn-success',
@@ -59,13 +59,17 @@ export class ListaUsuarioComponent implements OnInit {
     });
     swalWithBootstrapButtons.fire({
       title: 'Enviar Solicitud de Publicacion',
-      text: '¿Desea enviar Solicitud de Publicacion a ' + idusuario + '?',
+      text: '¿Desea enviar Solicitud de Publicacion a ' + usuario.correo + '?',
       icon: 'question',
       showCancelButton: true,
       confirmButtonText: 'Enviar Correo',
       cancelButtonText: 'Cancelar',
       reverseButtons: true
     }).then((result => {if (result.value) {
+      this.usuarioService.sendMail(usuario)
+        .subscribe(res => {
+          console.log(res);
+        })
       swalWithBootstrapButtons.fire({
         title: 'Correo Enviado',
         text: 'La Solicitud de Publicacion ha sido enviada.',

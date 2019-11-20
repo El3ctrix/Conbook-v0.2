@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { UsuarioService } from '../usuario.service';
 import { Usuario } from '../Usuario';
 import { Router } from '@angular/router';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-crear-usuario',
@@ -37,17 +38,29 @@ export class CrearUsuarioComponent implements OnInit {
         this.usuario.rol = 3;
         break;
     }
-    this.usuarioService.createUsuario(this.usuario)
-      .subscribe(data => console.log(data), error => console.log(error));
-    this.gotoList();
+    if (this.usuario.nombre === undefined || this.usuario.correo === undefined
+      || this.usuario.contraseña === undefined || this.usuario.rol === undefined) {
+      Swal.fire({
+        title: '¡Información incompleta!',
+        text: 'Todos los campos son obligatorios.',
+        icon: 'error',
+        confirmButtonText: 'Entendido'
+      }).then(() => {
+        this.submitted = false;
+      });
+    } else {
+      this.usuarioService.createUsuario(this.usuario)
+        .subscribe(data => console.log(data), error => console.log(error));
+      this.gotoList();
+    }
   }
 
   onSubmit() {
-    this.submitted = true;
     this.save();
   }
 
   gotoList() {
+    this.submitted = true;
     this.router.navigate(['/usuarios']);
   }
 }

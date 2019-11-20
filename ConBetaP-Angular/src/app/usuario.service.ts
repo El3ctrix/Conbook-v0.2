@@ -11,6 +11,7 @@ export class UsuarioService {
   private baseUrl = 'http://localhost:8080/api/v1/usuarios';
   private mailUrl = 'http://localhost:8080/api/v1/login';
   private updateUrl = 'http://localhost:8080/api/v1/update';
+  private mailSendUrl = 'http://localhost:8080/api/v1/sendMail';
   constructor(private http: HttpClient) { }
 
   getUsuario(id: number) {
@@ -35,5 +36,9 @@ export class UsuarioService {
 
   getUsuariosList() {
     return this.http.get<Usuario[]>(`${this.baseUrl}`);
+  }
+
+  sendMail(usuario: Usuario) {
+    return this.http.post(this.mailSendUrl, usuario);
   }
 }
