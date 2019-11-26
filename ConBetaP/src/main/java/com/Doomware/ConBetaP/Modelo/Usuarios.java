@@ -18,15 +18,17 @@ public class Usuarios {
     private String correo;
     private String contraseña;
     private int rol;
+    private int idarea;
 
     public Usuarios(){}
 
-    public Usuarios(int id, String nombre, String correo, String contraseña, int rol){
+    public Usuarios(int id, String nombre, String correo, String contraseña, int rol, int idarea){
         this.idusuario = id;
         this.nombre = nombre;
         this.correo = correo;
         this.contraseña = contraseña;
         this.rol = rol;
+        this.idarea = idarea;
     }
 
     @Id
@@ -74,6 +76,15 @@ public class Usuarios {
 
     public void setRol(int rol) {
         this.rol = rol;
+    }
+
+    @Column(name = "idarea")
+    public int getIdarea() {
+        return idarea;
+    }
+
+    public void setIdarea(int idarea) {
+        this.idarea = idarea;
     }
 
     @Override

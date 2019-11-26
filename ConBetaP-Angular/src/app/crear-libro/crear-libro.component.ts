@@ -4,6 +4,7 @@ import { Libro } from '../Libro';
 import { Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import * as jsPDF from 'jspdf';
+import Swal from "sweetalert2";
 
 
 @Component({
@@ -66,7 +67,17 @@ export class CrearLibroComponent implements OnInit {
       });
   }
 
-  missingData(){}
+  cancel(){
+    Swal.fire({
+      title: '¿Cancelar Solicitud de Publicación?',
+      icon: 'question',
+      showCancelButton: true,
+      confirmButtonText: 'Si, Cancelar',
+      cancelButtonText: 'No'
+    }).then(() => {
+      this.router.navigate(['libros']);
+    });
+  }
 
   onSubmit() {
     this.submitted = false;
@@ -75,6 +86,7 @@ export class CrearLibroComponent implements OnInit {
     this.libro.fechadecreacion = this.fecha;
     this.libro.responsable = localStorage.getItem('nombre');
     this.libro.estado = 1;
+
     this.libroService.createLibro(this.libro)
       .subscribe(data => console.log(data), error => console.log(error));
     const doc = new jsPDF('p', 'mm', 'a4');

@@ -15,10 +15,19 @@ export class CrearUsuarioComponent implements OnInit {
   submitted: boolean;
   password: string;
   rol: string;
-  rol1: number;
+  idarea: string;
 
   options = [
     { name: 'Representante', value: 2 }
+  ];
+
+  options1 = [
+    { name: 'Matemáticas' },
+    { name: 'Física' },
+    { name: 'Biología: Celular' },
+    { name: 'Biología: Comparada' },
+    { name: 'Biología: Ecología' },
+    { name: 'Biología: Evolutiva' }
   ];
 
   constructor(private usuarioService: UsuarioService,
@@ -38,6 +47,28 @@ export class CrearUsuarioComponent implements OnInit {
         this.usuario.rol = 3;
         break;
     }
+
+    switch (this.idarea) {
+      case 'Matemáticas':
+        this.usuario.idarea = 1;
+        break;
+      case 'Física':
+        this.usuario.idarea = 2;
+        break;
+      case 'Biología: Celular':
+        this.usuario.idarea = 3;
+        break;
+      case 'Biología: Comparada':
+        this.usuario.idarea = 4;
+        break;
+      case 'Biología: Ecología':
+        this.usuario.idarea = 5;
+        break;
+      case 'Biología: Evolutiva':
+        this.usuario.idarea = 6;
+        break;
+    }
+
     if (this.usuario.nombre === undefined || this.usuario.correo === undefined
       || this.usuario.contraseña === undefined || this.usuario.rol === undefined) {
       Swal.fire({

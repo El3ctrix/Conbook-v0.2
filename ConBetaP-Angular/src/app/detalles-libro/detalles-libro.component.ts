@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Libro } from '../Libro';
 import { LibroService } from '../libro.service';
 import { ActivatedRoute, Router } from '@angular/router';
+import {AreaService} from '../area.service';
+import {Area} from '../Area';
 
 @Component({
   selector: 'app-detalles-libro',
@@ -11,6 +13,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 export class DetallesLibroComponent implements OnInit {
 
   libro: Libro;
+  area: Area;
   id: number;
   options = [
     { name: 'Solicitado', value: 1, rep: false },
@@ -27,16 +30,23 @@ export class DetallesLibroComponent implements OnInit {
   ];
 
   constructor(private route: ActivatedRoute, private router: Router,
-              private libroService: LibroService) { }
+              private libroService: LibroService,
+              private areaService: AreaService) { }
 
   ngOnInit() {
     this.libro = new Libro();
+    this.area = new Area();
     this.id = this.route.snapshot.params.id;
 
     this.libroService.getLibro(this.id)
       .subscribe(data => {
         console.log(data);
         this.libro = data;
+        this.areaService.getArea(this.libro.idarea)
+          .subscribe(res => {
+            console.log(res);
+            this.area = res;
+          });
       });
   }
 

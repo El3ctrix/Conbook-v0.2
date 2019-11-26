@@ -2,21 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="87e0eb46-d60b-4945-a4f9-3fb5297a9738" name="Default Changelist" comment="Creando Front-End">
+      <change afterPath="$PROJECT_DIR$/src/app/Area.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/area.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/area.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ConBetaP/src/main/java/com/Doomware/ConBetaP/Controlador/AreaControlador.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ConBetaP/src/main/java/com/Doomware/ConBetaP/Modelo/Area.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ConBetaP/src/main/java/com/Doomware/ConBetaP/Modelo/Cotizacion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ConBetaP/src/main/java/com/Doomware/ConBetaP/Repositorio/AreaRepositorio.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Libro.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Libro.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Usuario.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Usuario.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/crear-libro/crear-libro.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/crear-libro/crear-libro.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/crear-libro/crear-libro.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/crear-libro/crear-libro.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/crear-usuario/crear-usuario.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/crear-usuario/crear-usuario.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/crear-usuario/crear-usuario.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/crear-usuario/crear-usuario.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/lista-usuario/lista-usuario.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/lista-usuario/lista-usuario.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/lista-usuario/lista-usuario.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/lista-usuario/lista-usuario.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/usuario.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/usuario.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/detalles-libro/detalles-libro.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/detalles-libro/detalles-libro.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/detalles-libro/detalles-libro.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/detalles-libro/detalles-libro.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/detalles-usuario/detalles-usuario.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/detalles-usuario/detalles-usuario.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/detalles-usuario/detalles-usuario.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/detalles-usuario/detalles-usuario.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ConBetaP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ConBetaP/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ConBetaP/ConBetaP.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../ConBetaP/ConBetaP.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ConBetaP/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ConBetaP/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ConBetaP/src/main/java/com/Doomware/ConBetaP/Controlador/MailControlador.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ConBetaP/src/main/java/com/Doomware/ConBetaP/Controlador/UsuariosControlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ConBetaP/src/main/java/com/Doomware/ConBetaP/Controlador/UsuariosControlador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ConBetaP/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../ConBetaP/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ConBetaP/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../ConBetaP/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ConBetaP/target/classes/com/Doomware/ConBetaP/Controlador/MailControlador.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConBetaP/src/main/java/com/Doomware/ConBetaP/Modelo/Libros.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ConBetaP/src/main/java/com/Doomware/ConBetaP/Modelo/Libros.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConBetaP/src/main/java/com/Doomware/ConBetaP/Modelo/Usuarios.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ConBetaP/src/main/java/com/Doomware/ConBetaP/Modelo/Usuarios.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ConBetaP/target/classes/com/Doomware/ConBetaP/Controlador/UsuariosControlador.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ConBetaP/target/classes/com/Doomware/ConBetaP/Controlador/UsuariosControlador.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConBetaP/target/classes/com/Doomware/ConBetaP/Modelo/Libros.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ConBetaP/target/classes/com/Doomware/ConBetaP/Modelo/Libros.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConBetaP/target/classes/com/Doomware/ConBetaP/Modelo/Usuarios.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ConBetaP/target/classes/com/Doomware/ConBetaP/Modelo/Usuarios.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -129,7 +138,10 @@
       <workItem from="1573686687471" duration="18427000" />
       <workItem from="1573752046044" duration="700000" />
       <workItem from="1573758905847" duration="2507000" />
-      <workItem from="1574211450349" duration="10653000" />
+      <workItem from="1574211450349" duration="10878000" />
+      <workItem from="1574277310654" duration="796000" />
+      <workItem from="1574309356150" duration="934000" />
+      <workItem from="1574714162485" duration="22455000" />
     </task>
     <servers />
   </component>

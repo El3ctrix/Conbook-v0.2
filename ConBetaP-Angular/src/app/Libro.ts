@@ -6,4 +6,5 @@ export class Libro {
   fechadecreacion: string;
   responsable: string;
   estado: number;
+  idarea: number;
 }

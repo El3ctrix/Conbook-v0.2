@@ -4,4 +4,5 @@ export class Usuario {
   correo: string;
   contraseña: string;
   rol: number;
+  idarea: number;
 }
