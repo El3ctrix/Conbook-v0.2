@@ -2,30 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c38358b6-dc05-424e-b70e-91e67fdbb65d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../ConBetaP-Angular/src/app/Area.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ConBetaP-Angular/src/app/area.service.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ConBetaP-Angular/src/app/area.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/Doomware/ConBetaP/Controlador/AreaControlador.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/Doomware/ConBetaP/Modelo/Area.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/Doomware/ConBetaP/Modelo/Cotizacion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/Doomware/ConBetaP/Repositorio/AreaRepositorio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ConBetaP-Angular/src/app/Cotizacion.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ConBetaP-Angular/src/app/Estado.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ConBetaP-Angular/src/app/cotizacion.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ConBetaP-Angular/src/app/cotizacion.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ConBetaP-Angular/src/app/estado.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ConBetaP-Angular/src/app/estado.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/Doomware/ConBetaP/Controlador/CotizacionControlador.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/Doomware/ConBetaP/Controlador/EstadoControlador.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/Doomware/ConBetaP/Modelo/Estado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/Doomware/ConBetaP/Repositorio/CotizacionRepositorio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/Doomware/ConBetaP/Repositorio/EstadoRepositorio.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ConBetaP-Angular/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ConBetaP-Angular/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ConBetaP-Angular/src/app/Libro.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../ConBetaP-Angular/src/app/Libro.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ConBetaP-Angular/src/app/Usuario.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../ConBetaP-Angular/src/app/Usuario.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ConBetaP-Angular/src/app/crear-libro/crear-libro.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ConBetaP-Angular/src/app/crear-libro/crear-libro.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ConBetaP-Angular/src/app/crear-libro/crear-libro.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../ConBetaP-Angular/src/app/crear-libro/crear-libro.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ConBetaP-Angular/src/app/crear-usuario/crear-usuario.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ConBetaP-Angular/src/app/crear-usuario/crear-usuario.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ConBetaP-Angular/src/app/crear-usuario/crear-usuario.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../ConBetaP-Angular/src/app/crear-usuario/crear-usuario.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ConBetaP-Angular/src/app/detalles-libro/detalles-libro.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ConBetaP-Angular/src/app/detalles-libro/detalles-libro.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ConBetaP-Angular/src/app/detalles-libro/detalles-libro.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../ConBetaP-Angular/src/app/detalles-libro/detalles-libro.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ConBetaP-Angular/src/app/detalles-usuario/detalles-usuario.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ConBetaP-Angular/src/app/detalles-usuario/detalles-usuario.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ConBetaP-Angular/src/app/detalles-usuario/detalles-usuario.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../ConBetaP-Angular/src/app/detalles-usuario/detalles-usuario.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConBetaP-Angular/src/app/libro.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../ConBetaP-Angular/src/app/libro.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConBetaP-Angular/src/app/lista-libro/lista-libro.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../ConBetaP-Angular/src/app/lista-libro/lista-libro.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConBetaP-Angular/src/app/update-libro/update-libro.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ConBetaP-Angular/src/app/update-libro/update-libro.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConBetaP-Angular/src/app/update-libro/update-libro.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../ConBetaP-Angular/src/app/update-libro/update-libro.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Doomware/ConBetaP/Controlador/LibrosControlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Doomware/ConBetaP/Controlador/LibrosControlador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Doomware/ConBetaP/Modelo/Cotizacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Doomware/ConBetaP/Modelo/Cotizacion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/Doomware/ConBetaP/Modelo/Libros.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Doomware/ConBetaP/Modelo/Libros.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Doomware/ConBetaP/Modelo/Usuarios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Doomware/ConBetaP/Modelo/Usuarios.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Doomware/ConBetaP/Controlador/UsuariosControlador.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Doomware/ConBetaP/Controlador/UsuariosControlador.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Doomware/ConBetaP/Modelo/Libros.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Doomware/ConBetaP/Modelo/Libros.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Doomware/ConBetaP/Modelo/Usuarios.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Doomware/ConBetaP/Modelo/Usuarios.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Doomware/ConBetaP/Controlador/LibrosControlador.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Doomware/ConBetaP/Controlador/LibrosControlador.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Doomware/ConBetaP/Modelo/Cotizacion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Doomware/ConBetaP/Modelo/Cotizacion.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,8 +38,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -122,7 +124,8 @@
       <workItem from="1574212723717" duration="13642000" />
       <workItem from="1574277215370" duration="1102000" />
       <workItem from="1574309606045" duration="1235000" />
-      <workItem from="1574714693899" duration="13278000" />
+      <workItem from="1574714693899" duration="13387000" />
+      <workItem from="1574811171938" duration="16906000" />
     </task>
     <servers />
   </component>

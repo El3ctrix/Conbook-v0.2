@@ -103,4 +103,5 @@ public class Libros {
     public void setIdarea(int idarea) {
         this.idarea = idarea;
     }
+
 }

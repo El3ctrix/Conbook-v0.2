@@ -66,4 +66,10 @@ public class LibrosControlador {
         logger.info("size: " + size);
         return new ResponseEntity<String>(orignalName, HttpStatus.OK);
     }
+
+    @PutMapping("/updateLibro/{id}")
+    public Libros updateLibro(@RequestBody Libros libros, @PathVariable("id") int idlibro){
+        libros.setIdlibro(idlibro);
+        return lbr.saveAndFlush(libros);
+    }
 }

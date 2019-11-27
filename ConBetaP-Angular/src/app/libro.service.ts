@@ -9,6 +9,7 @@ export class LibroService {
 
   private baseUrl = 'http://localhost:8080/api/v1/libros';
   private detailsUrl = 'http://localhost:8080/api/v1/details';
+  private updatesUrl = 'http://localhost:8080/api/v1/updateLibro';
   constructor(private http: HttpClient) { }
 
   getLibrosList() {
@@ -21,5 +22,9 @@ export class LibroService {
 
   createLibro(libro: Libro) {
     return this.http.post<Libro>(this.baseUrl, libro);
+  }
+
+  updateLibro(id: number, libro: Libro) {
+    return this.http.put<Libro>(this.updatesUrl + '/' + id, libro);
   }
 }

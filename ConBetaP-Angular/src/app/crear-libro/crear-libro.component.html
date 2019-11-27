@@ -8,6 +8,18 @@
     </div>
 
     <div class="form-group">
+      <label for="nombre">Area al que pertenece la Obra: </label>
+      <tr></tr>
+      <select class="custom-select" [(ngModel)]="areaS" style="max-width: 150px;" name="select">
+        <option>{{area[0].name}}</option>
+        <option>{{area[1].name}}</option>
+        <option>{{area[2].name}}</option>
+        <option>{{area[3].name}}</option>
+        <option>{{area[4].name}}</option>
+        <option>{{area[5].name}}</option>
+      </select>
+    </div>
+    <div class="form-group">
       <label for="nombre">Finalidad:</label>
       <div>
         <label>

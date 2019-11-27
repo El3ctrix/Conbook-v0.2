@@ -23,7 +23,8 @@ export class ListaLibroComponent implements OnInit {
     { name: 'Con ISBN', value: 8, rep: false },
     { name: 'En formación', value: 9, rep: false },
     { name: 'En imprenta', value: 10, rep: false },
-    { name: 'A la venta', value: 11, rep: false }
+    { name: 'A la venta', value: 11, rep: false },
+    { name: 'Cotizacion', value: 12, rep: false }
   ];
   constructor(private serviceLibro: LibroService,
               private router: Router) { }

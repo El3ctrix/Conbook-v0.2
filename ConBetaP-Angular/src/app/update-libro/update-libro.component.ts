@@ -3,6 +3,10 @@ import { LibroService } from '../libro.service';
 import { Libro } from '../Libro';
 import {ActivatedRoute, Router} from '@angular/router';
 import Swal from 'sweetalert2';
+import {CotizacionService} from '../cotizacion.service';
+import {Cotizacion} from '../Cotizacion';
+import {EstadoService} from '../estado.service';
+import {Estado} from '../Estado';
 
 @Component({
   selector: 'app-update-libro',
@@ -17,6 +21,7 @@ export class UpdateLibroComponent implements OnInit {
   estado: string;
   usr: string;
   currentState: number;
+  estado1 = new Estado();
   options = [
     { name: 'Solicitado', value: 1, rep: false },
     { name: 'En revisión', value: 2, rep: false },
@@ -33,27 +38,74 @@ export class UpdateLibroComponent implements OnInit {
   ];
   constructor(private route: ActivatedRoute,
               private libroService: LibroService,
+              private estadoService: EstadoService,
               private router: Router) { }
 
   ngOnInit() {
-    let temp = localStorage.getItem('nombre');
-    this.usr = temp.valueOf();
     this.libro = new Libro();
+
     this.id = this.route.snapshot.params.id;
+
     this.libroService.getLibro(this.id)
       .subscribe(data => {
         console.log(data);
         this.libro = data;
+        this.estadoService.getEstado(this.libro.estado)
+          .subscribe(res => {
+            console.log(res);
+            this.estado1 = res;
+          });
       });
-    this.currentState = this.libro.estado;
+  }
+
+  updateLibro() {
+    switch (this.estado) {
+      case 'Solicitado':
+        this.libro.estado = 1;
+        break;
+      case 'En revisión':
+        this.libro.estado = 2;
+        break;
+      case 'Revisado':
+        this.libro.estado = 3;
+        break;
+      case 'En corrección':
+        this.libro.estado = 4;
+        break;
+      case 'Corregido':
+        this.libro.estado = 5;
+        break;
+      case 'Autorizado':
+        this.libro.estado = 6;
+        break;
+      case 'Rechazado':
+        this.libro.estado = 7;
+        break;
+      case 'Con ISBN':
+        this.libro.estado = 8;
+        break;
+      case 'En formación':
+        this.libro.estado = 9;
+        break;
+      case 'En imprenta':
+        this.libro.estado = 10;
+        break;
+      case 'A la venta':
+        this.libro.estado = 11;
+        break;
+      case 'Cotizacion':
+        this.libro.estado = 12;
+        break;
+    }
+    this.libroService.updateLibro(this.id, this.libro)
+      .subscribe( data => {
+        console.log(data);
+      });
+    this.libro = new Libro();
   }
 
   onSubmit() {
-    /*
-    if (this.libro.codigoisbn !== 'Sin Codigo') {
-      this.libro.aprobado = true;
-    }
-    */
+    this.updateLibro();
     Swal.fire({
       title: 'Actualizar Información',
       text: '¡Información actualizada con Exito!',
