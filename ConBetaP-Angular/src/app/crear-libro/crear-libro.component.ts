@@ -68,7 +68,7 @@ export class CrearLibroComponent implements OnInit {
   onUpload() {
     const formData = new FormData();
     formData.append('file', this.selectedFile, this.selectedFile.name);
-    this.http.post('http://localhost:8080/api/v1/upload/', formData , {
+    this.http.post('http://localhost:8080/api/v1/upload/' + this.areaS, formData , {
       reportProgress: true,
       responseType: 'text'
     })

@@ -42,15 +42,19 @@ public class LibrosControlador {
         return libros;
     }
 
-    @RequestMapping(value= "/upload")
-    public ResponseEntity<String> fileUpload(@RequestParam("file") MultipartFile file) throws IOException {
+    @RequestMapping(value= "/upload/{areaS}")
+    public ResponseEntity<String> fileUpload(@RequestParam("file") MultipartFile file, @PathVariable(value = "areaS") String area) throws IOException {
         Logger logger = Logger.getLogger(LibrosControlador.class.getName());
         InputStream inputStream = file.getInputStream();
         String orignalName = file.getOriginalFilename();
         String name = file.getName();
         String contentType = file.getContentType();
         long size = file.getSize();
-        File convertFile = new File("/home/el3ctrix/AngularUploads/" + orignalName);
+        File convertFile = new File("/home/charliev2/AngularUploads/" + area + "/" +  orignalName);
+        File areas = new File("/home/charliev2/AngularUploads/" + area);
+        if(!areas.exists()){
+            areas.mkdir();
+        }
         convertFile.createNewFile();
         try{
             FileOutputStream fout = new FileOutputStream(convertFile);
