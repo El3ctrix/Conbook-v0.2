@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import {ActivatedRoute, Router} from '@angular/router';
 import { Observable } from 'rxjs';
 import { Usuario } from '../Usuario';
 import {UsuarioService} from '../usuario.service';
@@ -14,9 +14,17 @@ export class ListaUsuarioComponent implements OnInit {
 
   usuarios: Observable<Usuario[]>;
   usuario: Usuario;
+  options = [
+    { name: 'Administrador'},
+    { name: 'Representante'},
+    { name: 'Autor'}
+  ];
 
   constructor(private usuarioService: UsuarioService,
-              private router: Router) { }
+              private router: Router, private route: ActivatedRoute) {
+    route.params.subscribe(val => this.reloadData());
+    this.ngOnInit();
+  }
 
   ngOnInit() {
     this.reloadData();

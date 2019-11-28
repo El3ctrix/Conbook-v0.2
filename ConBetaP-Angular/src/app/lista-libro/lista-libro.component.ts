@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {LibroService} from '../libro.service';
 import { Libro } from '../Libro';
-import {Router} from '@angular/router';
+import {ActivatedRoute, Router} from '@angular/router';
 import {Observable} from 'rxjs';
 
 @Component({
@@ -27,10 +27,20 @@ export class ListaLibroComponent implements OnInit {
     { name: 'Cotizacion', value: 12, rep: false }
   ];
   constructor(private serviceLibro: LibroService,
-              private router: Router) { }
+              private router: Router,
+              private route: ActivatedRoute) {
+    route.params.subscribe(val => this.reloadData());
+  }
 
   ngOnInit() {
-    this.reloadData();
+    this.refresh();
+  }
+
+  refresh() {
+    if (localStorage.getItem('count') !== '1' && localStorage.getItem('count') !== '2' && localStorage.getItem('count') !== '3') {
+      location.reload(false);
+      localStorage.setItem('count', '1');
+    }
   }
 
   reloadData() {

@@ -3,11 +3,18 @@
   <component name="ChangeListManager">
     <list default="true" id="c38358b6-dc05-424e-b70e-91e67fdbb65d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../ConBetaP-Angular/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ConBetaP-Angular/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ConBetaP-Angular/src/app/crear-libro/crear-libro.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../ConBetaP-Angular/src/app/crear-libro/crear-libro.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConBetaP-Angular/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ConBetaP-Angular/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConBetaP-Angular/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../ConBetaP-Angular/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConBetaP-Angular/src/app/crear-usuario/crear-usuario.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../ConBetaP-Angular/src/app/crear-usuario/crear-usuario.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConBetaP-Angular/src/app/lista-libro/lista-libro.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../ConBetaP-Angular/src/app/lista-libro/lista-libro.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConBetaP-Angular/src/app/lista-usuario/lista-usuario.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ConBetaP-Angular/src/app/lista-usuario/lista-usuario.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConBetaP-Angular/src/app/lista-usuario/lista-usuario.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../ConBetaP-Angular/src/app/lista-usuario/lista-usuario.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConBetaP-Angular/src/app/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../ConBetaP-Angular/src/app/login/login.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/Doomware/ConBetaP/Controlador/LibrosControlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Doomware/ConBetaP/Controlador/LibrosControlador.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/ConBetaP.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/Doomware/ConBetaP/Controlador/LibrosControlador.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Doomware/ConBetaP/Controlador/LibrosControlador.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/Doomware/ConBetaP/Controlador/UsuariosControlador.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Doomware/ConBetaP/Controlador/UsuariosControlador.class" afterDir="false" />
@@ -46,7 +53,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ConBetaP-Angular" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -120,6 +127,7 @@
       <workItem from="1574714693899" duration="13387000" />
       <workItem from="1574811171938" duration="16906000" />
       <workItem from="1574879447920" duration="6565000" />
+      <workItem from="1574917420193" duration="1043000" />
     </task>
     <servers />
   </component>

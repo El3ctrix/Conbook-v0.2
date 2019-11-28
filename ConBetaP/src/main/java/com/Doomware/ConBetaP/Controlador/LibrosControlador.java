@@ -50,8 +50,8 @@ public class LibrosControlador {
         String name = file.getName();
         String contentType = file.getContentType();
         long size = file.getSize();
-        File convertFile = new File("/home/charliev2/AngularUploads/" + area + "/" +  orignalName);
-        File areas = new File("/home/charliev2/AngularUploads/" + area);
+        File convertFile = new File("/home/el3ctrix/AngularUploads/" + area + "/" +  orignalName);
+        File areas = new File("/home/el3ctrix/AngularUploads/" + area);
         if(!areas.exists()){
             areas.mkdir();
         }

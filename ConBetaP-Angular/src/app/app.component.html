@@ -278,10 +278,11 @@
   />
   <span>{{title}}</span>
   <div class="spacer"></div>
-  <a routerLink="add" class="nav-link" routerLinkActive="active">Añadir Usuario</a>
-  <a routerLink="usuarios" class="nav-link" routerLinkActive="active">Lista de Usuarios</a>
-  <a routerLink="addLibro" class="nav-link" routerLinkActive="active">Solicitud de Publicacion</a>
-  <a routerLink="libros" class="nav-link" routerLinkActive="active">Lista de Libros</a>
+  <a [hidden]="rol !== '1' && rol !== '2'" routerLink="add" class="nav-link" routerLinkActive="active">Añadir Usuario</a>
+  <a [hidden]="rol !== '1'" routerLink="usuarios" class="nav-link" routerLinkActive="active">Lista de Usuarios</a>
+  <a [hidden]="rol !== '3'"routerLink="addLibro" class="nav-link" routerLinkActive="active">Solicitud de Publicacion</a>
+  <a [hidden]="rol !== '1' && rol !== '2'"routerLink="libros" class="nav-link" routerLinkActive="active">Lista de Libros</a>
+  <a [hidden]="rol !== '1' && rol !== '2' && rol !== '3'"(click)="logout()" style="cursor: pointer">Cerrar Sesion</a>
 </div>
 <tr></tr>
 <tr></tr>

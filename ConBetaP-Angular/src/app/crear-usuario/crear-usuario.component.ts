@@ -18,7 +18,8 @@ export class CrearUsuarioComponent implements OnInit {
   idarea: string;
 
   options = [
-    { name: 'Representante', value: 2 }
+    { name: 'Representante', value: 2 },
+    { name: 'Autor', value: 3}
   ];
 
   options1 = [
